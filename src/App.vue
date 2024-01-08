@@ -11,8 +11,17 @@ export default{
 </script>
 
 <template>
-  <AppHeader/>
-  <ListProducts/>
+  <header>
+    <AppHeader/>
+  </header>
+
+  <main>
+    <ListProducts/>
+  </main>
+
+  <footer>
+
+  </footer>
 </template>
 
 <style lang="scss">

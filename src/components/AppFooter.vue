@@ -1,13 +1,13 @@
 <script>
     export default{
-        name:'ListProducts'
+        name:'AppFooter'
     }
 </script>
 
 <template>
-    <div>
+    <div id="bg">
         <div class="container">
-            <h1>Content goes here</h1>
+            
         </div>
     </div>
 </template>
@@ -16,13 +16,5 @@
     @use '../styles/partials/variables' as *;
     @use '../styles/partials/mixins' as *;
 
-    div{
-        background-color: black;
-        padding: 15px 0;
-    }
-    h1{
-        color: rgb(255, 255, 255);
-        text-align: center;
-    }
     
 </style>

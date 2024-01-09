@@ -62,20 +62,22 @@
 
 <template>
     <header>
-        <!-- logo -->
-        <div>
-            <img src="../img/dc-logo.png" alt="logo">
+        <div class="container">
+            <!-- logo -->
+            <div>
+                <img src="C:\Users\miche\Desktop\Progetti Boolean\vite-comics\img\dc-logo.png" alt="logo">
+            </div>
+            <!-- navigazione principale -->
+            <nav>
+                <ul>
+                    <li v-for="link in links">
+                        <a :href="link.url" :class="link.current ? 'active' : ''">
+                            {{ link.text }}
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <!-- navigazione principale -->
-        <nav>
-            <ul>
-                <li v-for="link in links">
-                    <a :href="link.url" :class="link.current ? 'active' : ''">
-                        {{ link.text }}
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </header>
 </template>
 
@@ -83,11 +85,11 @@
     @use '../styles/partials/variables' as *;
     @use '../styles/partials/mixins' as *;
 
-    header{
+    div{
         display:flex;
         align-items: center;
-        justify-content: space-around;
-        padding: 20px;
+        justify-content: space-between;
+        padding: 15px;
     }
     img{
         width: 70%;
@@ -104,6 +106,5 @@
         &.active, &:hover{
             color: blue;
         }
-
     }
 </style>

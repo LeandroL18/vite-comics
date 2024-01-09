@@ -1,11 +1,15 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import ListProducts from './components/ListProducts.vue'
+import NavList from './components/NavList.vue'
+import AppFooter from './components/AppFooter.vue'
 
 export default{
   components:{
     AppHeader,
-    ListProducts
+    ListProducts,
+    NavList,
+    AppFooter
   }
 }
 </script>
@@ -17,10 +21,11 @@ export default{
 
   <main>
     <ListProducts/>
+    <NavList/>
   </main>
 
   <footer>
-
+    <AppFooter/>
   </footer>
 </template>
 

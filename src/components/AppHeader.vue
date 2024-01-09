@@ -65,7 +65,7 @@
         <div class="container">
             <!-- logo -->
             <div>
-                <img src="C:\Users\miche\Desktop\Progetti Boolean\vite-comics\img\dc-logo.png" alt="logo">
+                <img src="../assets/dc-logo.png" alt="logo">
             </div>
             <!-- navigazione principale -->
             <nav>
@@ -84,12 +84,11 @@
 <style lang="scss" scoped>
     @use '../styles/partials/variables' as *;
     @use '../styles/partials/mixins' as *;
-
-    div{
+    .container{
         display:flex;
         align-items: center;
         justify-content: space-between;
-        padding: 15px;
+        padding: 10px;
     }
     img{
         width: 70%;

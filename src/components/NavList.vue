@@ -30,14 +30,13 @@
                         image: "../img/buy-dc-power-visa.svg",
                     },
                 ]
-
             }
         }
     }
 </script>
 
 <template>
-    <div>
+    <div id="bg">
         <div class="container">
             <ul>
                 <li v-for="link in links">
@@ -55,10 +54,14 @@
     @use '../styles/partials/variables' as *;
     @use '../styles/partials/mixins' as *;
 
-    div{
-        background-color: rgb(0, 89, 255);
+    #bg{
+        background-color: rgb(0, 89, 255); 
+        padding: 10px 0; 
+    }
+    .container{
         display: flex;
         align-items: center;
+        padding: 10px;
     }
 
     ul li{

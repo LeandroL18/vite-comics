@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <div>
+    <div id="bg">
         <div class="container">
             <h1>Content goes here</h1>
         </div>
@@ -16,9 +16,9 @@
     @use '../styles/partials/variables' as *;
     @use '../styles/partials/mixins' as *;
 
-    div{
+    #bg{
         background-color: black;
-        padding: 15px 0;
+        padding: 30px 0;
     }
     h1{
         color: rgb(255, 255, 255);

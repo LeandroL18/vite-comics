@@ -11,7 +11,7 @@ import AppHeader from './AppHeader.vue';
     <!-- Footer up -->
     <section>
         <div id="bg">
-            <div class="container">
+            <div id="container_up" class="container">
                 <div>
                     DC COMICS
                     <ul>
@@ -58,6 +58,7 @@ import AppHeader from './AppHeader.vue';
                         <li><a href="#">DC Power Visa</a></li>
                     </ul>
                 </div>
+                
 
                 <div>
                     <img src="../assets/dc-logo-bg.png" alt="">
@@ -69,18 +70,18 @@ import AppHeader from './AppHeader.vue';
     <!-- Footer down -->
     <section>
         <div id="bg_grey">
-            <div class="container">
+            <div id="container_down" class="container">
                 <div>
                     <a id="sign" href="#">SIGN-UP NOW!</a>
                 </div>
 
                 <div>
                     <span>FOLLOW US</span>
-                    <font-awesome-icon :icon="['fab', 'facebook']" />
-                    <font-awesome-icon :icon="['fab', 'twitter']" />
-                    <font-awesome-icon :icon="['fab', 'youtube']" />
-                    <font-awesome-icon :icon="['fas', 'location-dot']" />
-                    <font-awesome-icon :icon="['fas', 'location-dot']" />
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-solid fa-location-dot"></i>
                 </div>
             </div>
         </div>
@@ -95,20 +96,16 @@ import AppHeader from './AppHeader.vue';
         background-image: url("../assets/footer-bg.jpg");
         color: white;
     }
-    .container:first-child{
+    #container_up{
         display: flex;
-        padding-top: 15px;
+        padding: 30px;
     }
 
-    .container:last-of-type{
-        padding: 15px;
+    #container_down{
+        padding: 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
-    div:last-child{
-        margin-top: -15px;
     }
 
     a{
@@ -125,6 +122,7 @@ import AppHeader from './AppHeader.vue';
         color: rgb(0, 89, 255);
         font-weight: bold;
         vertical-align: -15px;
+        margin-right: 20px;
     }
 
     ul{
@@ -132,11 +130,61 @@ import AppHeader from './AppHeader.vue';
     }
 
     img{
-        width: 55%;
+        width: 66%;
+        margin: -30px 0px;
     }
 
     #bg_grey{
         background-color: rgb(80, 80, 80);
     }
     
+    .fa-facebook{
+        vertical-align: -22px;
+        margin-right: 10px;
+        font-size: 25px;
+        color: rgb(80, 80, 80);
+        background-color: grey;
+        padding: 3px;
+        border-radius: 50%;
+    }
+
+    .fa-twitter{
+        vertical-align: -22px;
+        margin-right: 10px;
+        font-size: 25px;
+        color: rgb(80, 80, 80);
+        background-color: grey;
+        padding: 3px;
+        border-radius: 50%;
+    }
+
+    .fa-pinterest-p{
+        vertical-align: -22px;
+        margin-right: 10px;
+        font-size: 25px;
+        color: rgb(80, 80, 80);
+        background-color: grey;
+        padding: 3px 7px;
+        border-radius: 50%;
+    }
+
+    .fa-youtube{
+        vertical-align: -22px;
+        margin-right: 10px;
+        font-size: 25px;
+        color: rgb(80, 80, 80);
+        background-color: grey;
+        padding: 3px;
+        border-radius: 50%;
+    }
+    .fa-location-dot{
+        vertical-align: -22px;
+        margin-right: 10px;
+        font-size: 25px;
+        color: rgb(80, 80, 80);
+        background-color: grey;
+        padding: 3px 6.5px;
+        border-radius: 50%;
+    }
+
 </style>

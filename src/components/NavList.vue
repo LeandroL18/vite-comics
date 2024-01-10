@@ -62,11 +62,19 @@
         display: flex;
         align-items: center;
         padding: 10px;
+        width: 100%;
+        text-align: center;
+        padding-left: 10%;
+        padding-bottom: 20px;
     }
 
     ul li{
         display: inline-block;
         font-size: 10px;
+    }
+
+    ul li:last-of-type{
+        margin-left: -70px;
     }
 
     li a{

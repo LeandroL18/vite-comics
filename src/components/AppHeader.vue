@@ -70,7 +70,7 @@
             <!-- navigazione principale -->
             <nav>
                 <ul>
-                    <li v-for="link in links">
+                    <li v-for="(link,i) in links" :key="i">
                         <a :href="link.url" :class="link.current ? 'active' : ''">
                             {{ link.text }}
                         </a>

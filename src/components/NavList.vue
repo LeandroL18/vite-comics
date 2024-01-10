@@ -39,7 +39,7 @@
     <div id="bg">
         <div class="container">
             <ul>
-                <li v-for="link in links">
+                <li v-for="(link,i) in links" :key="i">
                     <a :href="link.url">
                         <img :src="link.image" alt="img">
                         {{ link.text }}
